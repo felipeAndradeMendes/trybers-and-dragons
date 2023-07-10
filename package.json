@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "start:race": "ts-node src/Races/index.ts",
     "dev": "nodemon --watch \"./src/**\" --ext \"ts,js\" --ignore \"src/**/*.spec.ts,src/**/*.json\" --exec \"ts-node src/index.ts\"",
     "pretest": "rm -rf ./dist",
     "test": "jest --runInBand --verbose",
