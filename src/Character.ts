@@ -60,12 +60,11 @@ export default class Character implements Fighter {
     return this._dexterity;
   }
 
-  // VER COMO DEIXAR PROTEGIDOS AS KEYS DESSE OBJ
   get energy(): Energy {
     return { ...this._energy };
   }
 
-  // UTILS
+  // UTILS - FIGHTER METHODS
   private levelUpAttrRandom(): void {
     this._maxLifePoints += getRandomInt(1, 10);
     this._strength += getRandomInt(1, 10);
