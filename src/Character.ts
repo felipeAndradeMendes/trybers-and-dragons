@@ -62,7 +62,7 @@ export default class Character implements Fighter {
 
   // VER COMO DEIXAR PROTEGIDOS AS KEYS DESSE OBJ
   get energy(): Energy {
-    return this._energy;
+    return { ...this._energy };
   }
 
   // UTILS
