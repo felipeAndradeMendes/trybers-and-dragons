@@ -1,6 +1,6 @@
 export default abstract class Race {
-  private readonly _name: string;
-  private readonly _dexterity: number;
+  private _name: string;
+  private _dexterity: number;
 
   constructor(name: string, dexterity: number) {
     this._name = name;
@@ -11,14 +11,14 @@ export default abstract class Race {
     throw new Error('Not implemented');    
   }
 
-  abstract maxLifePoints(): number;
+  public abstract get maxLifePoints(): number;
 
   // GETTERS
-  get name() {
+  get name(): string {
     return this._name;
   }
 
-  get dexterity() {
+  get dexterity(): number {
     return this._dexterity;
   } 
 }
