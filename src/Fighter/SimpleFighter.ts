@@ -6,4 +6,6 @@ export default interface SimpleFighter {
   receiveDamage(attackPoints: number): number;
 }
 
-// FALTA FAZER A SEGREGAÇÃO DE INTERFACES COMO PROPOSTO
+// Duvidas
+// Como fazer para nao repetir codigo utilizando as duas interfaces?
+// Pq a importação da interface SimplePFighter deve ser feita entre {}?
